@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-acai: #310b3d;
+  --color-indigo: #4B0082;
+  --color-pistache: #93C572;
+  --color-pistache-dark: #1e3a0a;
+  --color-gold: #FFD700;
+  --color-cream: #fcf9f2;
+  --color-ifood: #ea1d2c;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-acai selection:bg-pistache selection:text-acai;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    @apply font-black tracking-tighter leading-[0.95];
+  }
+}
+
+.acai-gradient {
+  background: linear-gradient(135deg, #310b3d 0%, #4B0082 100%);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-acai to-indigo;
+}
+
+.pistache-glow {
+  box-shadow: 0 0 20px rgba(147, 197, 114, 0.3);
+}
+
+.card-vibrant {
+  @apply bg-white rounded-[32px] border border-acai/10 shadow-sm transition-all duration-300 hover:shadow-xl;
+}
+
+/* Logo Animations */
+@keyframes shine {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  50%, 100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shine 3s infinite;
+}
+
+.whatsapp-float {
+  @apply fixed bottom-8 left-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center;
+  animation: pulse-whatsapp 2s infinite;
+}
+
+@keyframes pulse-whatsapp {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); transform: scale(1); }
+  70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); transform: scale(1.05); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); transform: scale(1); }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.logo-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shine 3s infinite;
+}
+
+.logo-reflection {
+  @apply relative;
+}
+
+.logo-reflection::before {
+  content: "";
+  @apply absolute -bottom-[10%] left-0 w-full h-[30%] bg-gradient-to-t from-white/20 to-transparent blur-[2px] opacity-40;
+  transform: scaleY(-1);
+}
+
+.logo-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.banner-gradient {
+  background: linear-gradient(90deg, #310b3d 0%, #FFD700 100%);
+}
+
