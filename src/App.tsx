@@ -335,7 +335,7 @@ const MenuSection = () => {
       id: 'acai', 
       name: '🍇 Açaí & Montagem', 
       icon: <Soup size={18} />,
-      image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777583258/WhatsApp_Image_2026-04-30_at_6.03.03_PM_cr3uls.jpg",
+      image: "https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1778721509/WhatsApp_Image_2026-05-04_at_9.13.43_PM_xoawnc.jpg",
       items: [
         { name: 'Tradicional P (2 comp.)', price: 'R$ 13,00', description: 'Açaí premium com 2 acompanhamentos e cobertura inclusos.', icon: <Soup size={20} /> },
         { name: 'Tradicional M (3 comp.)', price: 'R$ 18,00', description: 'Açaí premium com 3 acompanhamentos e cobertura inclusos.', icon: <Soup size={20} /> },
@@ -347,7 +347,7 @@ const MenuSection = () => {
         { name: 'Super Mix', price: 'R$ 13,00 / R$ 16,00', description: 'O mix clássico que todo mundo ama.', icon: <Soup size={20} /> },
         { name: 'Acompanhamentos Grátis', price: 'Incluso', description: 'Banana, Granola, Flocos, Leite em Pó, Neston, Aveia, Amendoim, Paçoca, Ovomaltine e Sucrilhos.', icon: <Sparkles size={20} /> },
         { name: 'Pistache Premium', price: 'R$ 6,00', description: 'Pistache granulado torrado para a crocância perfeita.', featured: true, icon: <Star size={20} /> },
-        { name: 'Cremes Gourmet', price: 'R$ 5,00', description: 'Cupuaçu, Ninho, Nutella, Oreo ou Paçoca.', icon: <Cake size={20} /> },
+        { name: 'Adicionais de Cremes', price: 'R$ 5,00', description: 'Cupuaçu, Ninho, Ninho com Nutella, Ninho com Oreo e Paçoca.', featured: true, icon: <Cake size={20} /> },
         { name: 'Frutas (Morango/Kiwi)', price: 'R$ 4,00', description: 'Adicionais de frutas frescas picadas na hora.', icon: <Sparkles size={20} /> },
         { name: 'Extra Premium', price: 'R$ 4,00', description: 'Castaña, Leite em Pó adicional ou Leite Condensado extra.', icon: <Beef size={20} /> },
       ]
