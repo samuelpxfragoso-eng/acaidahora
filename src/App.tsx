@@ -511,7 +511,7 @@ const Reviews = () => {
           </div>
           <div className="flex flex-col gap-4 w-full md:w-auto">
             <a 
-              href="https://www.google.com/search?q=Açai+da+Hora+Praia+do+Frances+avaliacoes" 
+              href="https://g.page/r/CY5AelCPBRQCEAE/review" 
               target="_blank"
               className="btn-shine bg-white text-acai px-8 py-5 rounded-2xl font-black uppercase text-xs tracking-widest shadow-2xl transition-all hover:bg-gold hover:-translate-y-1 flex items-center justify-center gap-3"
             >
@@ -519,7 +519,7 @@ const Reviews = () => {
               <ChevronRight size={18} />
             </a>
             <a 
-              href="https://www.google.com/search?q=Açai+da+Hora+Maceio+avaliacoes" 
+              href="https://g.page/r/CY5AelCPBRQCEAE/review" 
               target="_blank"
               className="btn-shine bg-white text-acai px-8 py-5 rounded-2xl font-black uppercase text-xs tracking-widest shadow-2xl transition-all hover:bg-gold hover:-translate-y-1 flex items-center justify-center gap-3"
             >
@@ -807,6 +807,79 @@ const FAQ = () => {
   );
 };
 
+const GoogleImportance = () => {
+  return (
+    <section className="py-24 px-6 bg-white overflow-hidden relative">
+      <div className="max-w-5xl mx-auto">
+        <div className="card-vibrant p-8 md:p-16 border-4 border-gold/20 relative overflow-hidden">
+          <div className="absolute -top-12 -right-12 w-64 h-64 bg-gold/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-pistache/10 rounded-full blur-3xl animate-pulse" />
+          
+          <div className="relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 bg-acai text-gold px-4 py-2 rounded-full font-black text-[10px] uppercase tracking-[0.2em] mb-8">
+              <Star size={14} fill="currentColor" />
+              Sua voz é nosso combustível
+              <Star size={14} fill="currentColor" />
+            </div>
+            
+            <h2 className="text-4xl md:text-6xl text-acai font-black uppercase tracking-tighter leading-[0.9] mb-8">
+              A Importância da sua <br /><span className="text-indigo italic">Avaliação no Google</span>
+            </h2>
+            
+            <div className="max-w-3xl mx-auto space-y-6">
+              <p className="text-lg md:text-xl text-acai/70 font-medium leading-relaxed">
+                O seu feedback no Google é o coração da nossa açaiteria! 🌟 Quando você nos avalia, não está apenas deixando um comentário, você está ajudando o <span className="text-acai font-black uppercase">Açaí da Hora</span> a:
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center mb-4 shadow-sm border border-acai/5">
+                    <Sparkles className="text-gold" size={24} />
+                  </div>
+                  <h4 className="font-black text-acai uppercase text-[10px] tracking-widest">Atrair Turistas</h4>
+                  <p className="text-[10px] text-acai/50 uppercase font-bold mt-1">Sermos recomendados na Vila</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center mb-4 shadow-sm border border-acai/5">
+                    <UtensilsCrossed className="text-indigo" size={24} />
+                  </div>
+                  <h4 className="font-black text-acai uppercase text-[10px] tracking-widest">Aprimorar o Sabor</h4>
+                  <p className="text-[10px] text-acai/50 uppercase font-bold mt-1">Ouvimos cada sugestão sua</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center mb-4 shadow-sm border border-acai/5">
+                    <Star className="text-pistache" size={24} />
+                  </div>
+                  <h4 className="font-black text-acai uppercase text-[10px] tracking-widest">Engajar a Equipe</h4>
+                  <p className="text-[10px] text-acai/50 uppercase font-bold mt-1">Elogios motivam nosso time</p>
+                </div>
+              </div>
+
+              <p className="text-acai/60 italic font-medium">
+                "Nosso objetivo é ser o melhor açaí da Praia do Francês, e sua nota 5 estrelas nos coloca um passo mais perto desse sonho."
+              </p>
+            </div>
+
+            <div className="mt-12 flex flex-col items-center gap-4">
+              <motion.a 
+                href="https://g.page/r/CY5AelCPBRQCEAE/review" 
+                target="_blank"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-shine bg-acai text-white px-12 py-6 rounded-[30px] font-black uppercase text-sm tracking-widest shadow-2xl flex items-center gap-4 group"
+              >
+                Deixar minha Avaliação Agora
+                <ChevronRight size={24} className="group-hover:translate-x-1 transition-transform" />
+              </motion.a>
+              <p className="text-[10px] font-black text-acai/30 uppercase tracking-[0.3em]">Leva menos de 1 minuto!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="bg-acai text-white py-16 px-6">
@@ -906,6 +979,7 @@ export default function App() {
       <QuickInfoBar />
       <LocationSection />
       <FAQ />
+      <GoogleImportance />
       <Footer />
       <FloatingWhatsApp />
     </div>
