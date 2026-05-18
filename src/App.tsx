@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <div className="logo-shine logo-reflection logo-float bg-white rounded-full p-1 shadow-sm border border-acai/5">
               <img 
-                src="https://res.cloudinary.com/dqukldtq1/image/upload/v1777239013/WhatsApp_Image_2026-04-26_at_5.42.18_PM_1_avaoht.jpg" 
+                src="https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1779066189/WhatsApp_Image_2026-05-17_at_9.59.27_PM_md1yxe.jpg" 
                 alt="Açaí da Hora Logo" 
                 className="w-12 h-12 rounded-full object-cover"
                 referrerPolicy="no-referrer"
@@ -248,18 +248,6 @@ const CremesGourmetSection = () => {
   return (
     <section className="py-20 px-6 bg-white border-b border-acai/5">
       <div className="max-w-3xl mx-auto text-center">
-        {/* Featured Image with effects */}
-        <div className="flex justify-center mb-8">
-            <div className="logo-shine logo-reflection logo-float bg-white rounded-3xl p-1 shadow-2xl border border-acai/10 overflow-hidden w-64 md:w-96 h-auto">
-              <img 
-                src="https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1778721509/WhatsApp_Image_2026-05-04_at_9.13.43_PM_xoawnc.jpg" 
-                alt="Cremes Gourmet" 
-                className="w-full h-auto rounded-2xl"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-        </div>
-
         <span className="bg-pistache/10 text-pistache px-4 py-1.5 rounded-full font-black text-[10px] uppercase tracking-widest mb-6 inline-block">
           Cremes Gourmet
         </span>
@@ -958,7 +946,7 @@ const Footer = () => {
           <div className="flex items-center gap-3 mb-6">
             <div className="logo-shine logo-reflection logo-float bg-white rounded-full p-1 shadow-sm border border-white/10">
               <img 
-                src="https://res.cloudinary.com/dqukldtq1/image/upload/v1777239013/WhatsApp_Image_2026-04-26_at_5.42.18_PM_1_avaoht.jpg" 
+                src="https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1779066189/WhatsApp_Image_2026-05-17_at_9.59.27_PM_md1yxe.jpg" 
                 alt="Açaí da Hora Logo" 
                 className="w-12 h-12 rounded-full object-cover"
                 referrerPolicy="no-referrer"
