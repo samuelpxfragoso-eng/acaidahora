@@ -250,7 +250,7 @@ const CremesGourmetSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         {/* Featured Image with effects */}
         <div className="flex justify-center mb-8">
-            <div className="logo-shine logo-reflection logo-float bg-white rounded-3xl p-1 shadow-2xl border border-acai/10 overflow-hidden w-48 md:w-64 h-auto">
+            <div className="logo-shine logo-reflection logo-float bg-white rounded-3xl p-1 shadow-2xl border border-acai/10 overflow-hidden w-64 md:w-96 h-auto">
               <img 
                 src="https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1778721509/WhatsApp_Image_2026-05-04_at_9.13.43_PM_xoawnc.jpg" 
                 alt="Cremes Gourmet" 
