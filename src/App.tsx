@@ -240,6 +240,65 @@ const Hero = () => {
   );
 };
 
+
+
+const CremesGourmetSection = () => {
+  const cremes = ["Cupuaçu", "Ninho", "Ninho com Nutella", "Ninho com Oreo", "Paçoca"];
+  
+  return (
+    <section className="py-20 px-6 bg-white border-b border-acai/5">
+      <div className="max-w-3xl mx-auto text-center">
+        {/* Featured Image with effects */}
+        <div className="flex justify-center mb-8">
+            <div className="logo-shine logo-reflection logo-float bg-white rounded-3xl p-1 shadow-2xl border border-acai/10 overflow-hidden w-48 md:w-64 h-auto">
+              <img 
+                src="https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1778721509/WhatsApp_Image_2026-05-04_at_9.13.43_PM_xoawnc.jpg" 
+                alt="Cremes Gourmet" 
+                className="w-full h-auto rounded-2xl"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+        </div>
+
+        <span className="bg-pistache/10 text-pistache px-4 py-1.5 rounded-full font-black text-[10px] uppercase tracking-widest mb-6 inline-block">
+          Cremes Gourmet
+        </span>
+        <h2 className="text-4xl md:text-6xl text-acai font-black uppercase tracking-tighter leading-tight mb-6">
+          Turbine seu <span className="text-indigo italic">Açaí</span>
+        </h2>
+        <p className="text-acai/60 font-medium mb-12">
+          Adicione cremosidade extra com nossos sabores exclusivos preparados artesanalmente.
+        </p>
+        
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {cremes.map((creme) => (
+            <div key={creme} className="bg-cream px-6 py-3 rounded-2xl border border-acai/5 shadow-sm">
+              <span className="font-black text-acai uppercase text-[10px] tracking-widest">{creme}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://wa.me/5582991092725" 
+            target="_blank"
+            className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-black uppercase text-xs tracking-widest shadow-lg transition-all hover:scale-105"
+          >
+            WhatsApp
+          </a>
+          <a 
+            href="https://www.ifood.com.br/delivery/marechal-deodoro-al/acai-da-hora---praia-do-frances-frances/c5bd6f67-cdd1-4cee-837c-2fce2957688d?UTM_Medium=share" 
+            target="_blank"
+            className="bg-ifood text-white px-8 py-4 rounded-xl font-black uppercase text-xs tracking-widest shadow-lg transition-all hover:scale-105"
+          >
+            iFood
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const FullWidthVideoHighlight = () => {
   return (
     <section className="relative w-full h-[60vh] md:h-screen overflow-hidden bg-acai">
@@ -335,7 +394,7 @@ const MenuSection = () => {
       id: 'acai', 
       name: '🍇 Açaí & Montagem', 
       icon: <Soup size={18} />,
-      image: "https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1778721509/WhatsApp_Image_2026-05-04_at_9.13.43_PM_xoawnc.jpg",
+      image: "https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1779061737/WhatsApp_Image_2026-05-17_at_8.44.45_PM_o0lepp.jpg",
       items: [
         { name: 'Tradicional P (2 comp.)', price: 'R$ 13,00', description: 'Açaí premium com 2 acompanhamentos e cobertura inclusos.', icon: <Soup size={20} /> },
         { name: 'Tradicional M (3 comp.)', price: 'R$ 18,00', description: 'Açaí premium com 3 acompanhamentos e cobertura inclusos.', icon: <Soup size={20} /> },
@@ -634,14 +693,14 @@ const LocationSection = () => {
       id: "frances",
       title: "Praia do Francês",
       address: "Rua carapeba, Lote 13/01, Galeria Lisboa (La Rue).",
-      image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777243528/WhatsApp_Image_2026-04-26_at_7.42.42_PM_oyphfw.jpg",
+      image: "https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1779060877/WhatsApp_Image_2026-05-17_at_4.26.42_PM_brgifq.jpg",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.398579973809!2d-35.842777!3d-9.771234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70138290f67a65b%3A0x633d7350764e526a!2sPraia%20do%20Franc%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1714000000000!5m2!1spt-BR!2sbr"
     },
     {
       id: "maceio",
       title: "Orla de Maceió",
       address: "Av. Álvaro Otacílio, Jatiúca (Próximo à Orla).",
-      image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777243528/WhatsApp_Image_2026-04-26_at_7.42.41_PM_gm7onf.jpg",
+      image: "https://res.cloudinary.com/dqfnkztbe/image/upload/q_auto/f_auto/v1779060876/WhatsApp_Image_2026-05-17_at_8.17.54_PM_ahizvy.jpg",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.2798606404284!2d-35.706173!3d-9.657271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701406834b6e51f!2zQXZuw61kYSBBbHZhcm8gT3RhY8OtbGlvLCBNYWNlaMOzIC0gQUw!5e0!3m2!1spt-BR!2sbr!4v1714000000000!5m2!1spt-BR!2sbr"
     }
   ];
@@ -685,11 +744,23 @@ const LocationSection = () => {
                     {unit.address}
                   </p>
                 </div>
-                <div className="flex items-center gap-4 px-6 py-4 bg-white/50 rounded-2xl w-fit">
+                <div className="flex flex-col gap-4 px-6 py-4 bg-white/50 rounded-2xl w-fit">
                     <Clock size={20} className="text-indigo" />
                     <div>
-                      <p className="text-[10px] font-black uppercase text-acai/40">Hoje</p>
-                      <p className="text-xs font-black text-acai uppercase">14h às 22h</p>
+                      <p className="text-[10px] font-black uppercase text-acai/40">Horário de Funcionamento</p>
+                      <div className="text-xs font-black text-acai uppercase space-y-1">
+                        {unit.id === "frances" ? (
+                          <>
+                            <p>Dom a Qui: 15h às 22h</p>
+                            <p>Sex e Sáb: 15h às 23h</p>
+                          </>
+                        ) : (
+                          <>
+                            <p>Seg e Ter: 14h às 22h</p>
+                            <p>Qua a Dom: 08h às 22h</p>
+                          </>
+                        )}
+                      </div>
                     </div>
                 </div>
               </div>
@@ -722,7 +793,7 @@ const LocationSection = () => {
 };
 
 const QuickInfoBar = () => {
-  const tags = ["Sem Lactose", "Entrega Própria", "Eventos", "Pistache Torrado", "Montagem Express"];
+  const tags = ["Sem Lactose", "Entrega Imediata", "Frutas Frescas", "Pistache Torrado", "Montagem Express"];
   return (
     <div className="bg-acai text-white py-6 flex flex-wrap items-center px-8 gap-8 border-y border-white/10 overflow-hidden">
       <div className="flex items-center gap-2 min-w-max">
@@ -749,15 +820,14 @@ const FAQ = () => {
 
   const faqs = [
     { q: "Onde vocês estão localizados?", a: "Estamos no complexo La Rue, na Praia do Francês. É um dos pontos mais charmosos da vila!" },
-    { q: "Quais os tamanhos disponíveis?", a: "Temos copos e tigelas que variam de 300ml até 1 litro, para todos os tamanhos de fome." },
+    { q: "Quais os tamanhos disponíveis?", a: "Temos potes variando de 200ml até 500ml, perfeitos para sua fome." },
     { q: "O açaí contém xarope de guaraná?", a: "Nosso açaí é do tipo premium, batido com o mínimo de adição para manter a cremosidade e o sabor autêntico." },
-    { q: "Vocês entregam em toda a região?", a: "Sim! Entregamos em toda a Praia do Francês e arredores via iFood e também temos entrega própria via WhatsApp." },
-    { q: "Quais as opções de frutas?", a: "Temos frutas sempre frescas: Banana, morango, kiwi, uva e manga. Tudo selecionado diariamente." },
+    { q: "Vocês entregam em toda a região?", a: "Sim! Entregamos em toda a Praia do Francês e arredores exclusivamente via iFood." },
+    { q: "Quais as opções de frutas?", a: "Temos frutas sempre frescas: Banana, morango e kiwi. Tudo selecionado diariamente." },
     { q: "Têm opções sem lactose?", a: "Sim, nosso açaí é base fruta, totalmente livre de derivados de leite em sua forma pura." },
     { q: "Aceitam cartões e PIX?", a: "Com certeza. Aceitamos todas as bandeiras de cartão de crédito, débito e também pagamentos via PIX para sua comodidade." },
     { q: "O pistache é doce ou salgado?", a: "Utilizamos pistache torrado e granulado com um toque levemente salgado para criar o contraste perfeito com o doce do açaí e do creme." },
-    { q: "Posso personalizar meu adicional?", a: "Com certeza! Nosso lema é: monte do seu jeito. Temos mais de 20 opções de acompanhamentos." },
-    { q: "Trabalham com eventos?", a: "Sim! Levamos o sabor do Açaí da Hora para sua festa ou evento corporativo. Consulte-nos pelo WhatsApp." }
+    { q: "Posso personalizar meu adicional?", a: "Com certeza! Nosso lema é: monte do seu jeito. Temos mais de 20 opções de acompanhamentos." }
   ];
 
   return (
@@ -971,6 +1041,7 @@ export default function App() {
     <div className="relative" translate="no">
       <Navbar />
       <Hero />
+      <CremesGourmetSection />
       <FullWidthVideoHighlight />
       <MenuSection />
       <Reviews />
